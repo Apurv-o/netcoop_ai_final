@@ -1,0 +1,16 @@
+{
+  "schema_version": "9.0",
+  "incident_id": "INC-MALFORMED-001",
+  "devices": [
+    {
+      "device_id": "BAD_DEVICE",
+      "device_type": "switch",
+      "segment": "unknown",
+      "metrics": {
+        "latency_ms": "very slow",
+        "packet_loss_pct": null,
+        "cpu_pct": 40
+      }
+    }
+  ]
+}

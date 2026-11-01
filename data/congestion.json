@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "incident_id": "INC-CONGESTION-001",
+  "devices": [
+    {
+      "device_id": "HOSTEL_CORE_SW_01",
+      "device_type": "switch",
+      "segment": "hostel_uplink",
+      "metrics": {
+        "latency_ms": 280,
+        "packet_loss_pct": 4.2,
+        "jitter_ms": 48,
+        "link_utilization_pct": 94,
+        "cpu_pct": 66,
+        "interface_errors": 3,
+        "queue_drops": 160
+      }
+    },
+    {
+      "device_id": "HOSTEL_AP_01",
+      "device_type": "access_point",
+      "segment": "hostel_wifi",
+      "metrics": {
+        "latency_ms": 190,
+        "packet_loss_pct": 3.5,
+        "jitter_ms": 38,
+        "link_utilization_pct": 88,
+        "cpu_pct": 48,
+        "interface_errors": 2,
+        "queue_drops": 64,
+        "wifi_signal_dbm": -59
+      }
+    }
+  ]
+}

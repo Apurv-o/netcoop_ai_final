@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "incident_id": "INC-NORMAL-001",
+  "devices": [
+    {
+      "device_id": "HOSTEL_AP_01",
+      "device_type": "access_point",
+      "segment": "hostel_wifi",
+      "metrics": {
+        "latency_ms": 22,
+        "packet_loss_pct": 0.2,
+        "jitter_ms": 4,
+        "link_utilization_pct": 42,
+        "cpu_pct": 35,
+        "interface_errors": 0,
+        "queue_drops": 2,
+        "wifi_signal_dbm": -55
+      }
+    }
+  ]
+}

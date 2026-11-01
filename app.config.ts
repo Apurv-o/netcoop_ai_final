@@ -1,0 +1,1 @@
+export default { logoUrl: "https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f310.svg" };

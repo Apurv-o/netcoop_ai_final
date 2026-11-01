@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "incident_id": "INC-INTERFACE-001",
+  "devices": [
+    {
+      "device_id": "DEPT_SW_03",
+      "device_type": "switch",
+      "segment": "department_ethernet",
+      "metrics": {
+        "latency_ms": 95,
+        "packet_loss_pct": 4.1,
+        "jitter_ms": 18,
+        "link_utilization_pct": 50,
+        "cpu_pct": 44,
+        "interface_errors": 42,
+        "queue_drops": 6
+      }
+    }
+  ]
+}
