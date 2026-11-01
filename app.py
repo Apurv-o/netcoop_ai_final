@@ -54,9 +54,10 @@ def index() -> Any:
 
 @app.get("/<path:path>")
 def public_file(path: str) -> Any:
-    candidate = ROOT / "public" / path
+    target_path = path[len("public/"):] if path.startswith("public/") else path
+    candidate = ROOT / "public" / target_path
     if candidate.is_file():
-        return send_from_directory(ROOT / "public", path)
+        return send_from_directory(ROOT / "public", target_path)
     return send_from_directory(ROOT / "public", "index.html")
 
 

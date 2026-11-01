@@ -79,3 +79,15 @@ def test_http_rejects_non_json(client):
     response = client.post("/api/diagnose", data="not json", content_type="text/plain")
     assert response.status_code == 415
     assert "error" in response.get_json()
+
+
+def test_static_assets_serve_correctly(client):
+    for path in ("/styles.css", "/public/styles.css", "/app.js", "/public/app.js", "/"):
+        response = client.get(path)
+        assert response.status_code == 200, f"Failed for {path}"
+
+
+def test_serverless_handler_importable():
+    from api.index import app as vercel_app, handler
+    assert vercel_app is not None
+    assert handler is not None
